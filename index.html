@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIVOT 08 - Encontro 2025</title>
-    <meta property="og:title" content="🎉 A festa da PIVOT 08 está chegando!" />
-    <meta property="og:description" content="Contagem regressiva para o encontro 2025 da PIVOT 08!" />
+    <!-- Open Graph Tags (Prévia WhatsApp) -->
+    <meta property="og:title" content="🎉 A Festa da PIVOT 08 Está Chegando!" />
+    <meta property="og:description" content="Contagem regressiva para o Encontro 2025 da PIVOT 08! Não perca!" />
     <meta property="og:image" content="https://res.cloudinary.com/dbr43jqca/image/upload/v1763737375/invite_vwiy64.jpg" />
     <meta property="og:url" content="https://confra2025-pivot.vercel.app/" />
     <meta property="og:type" content="website" />
@@ -58,45 +59,45 @@
 
         <div class="mb-8">
             <img src="pivot.png"
-                    alt="Logo PIVOT|08 Digital Business"
-                    class="mx-auto w-full max-w-xs filter drop-shadow-lg"
+                    alt="Logo PIVOT 08 Digital Business"
+                    class="mx-auto w-full max-w-xs max-h-36 sm:max-h-48 filter drop-shadow-lg"
                 >
         </div>
 
         <!-- Título e Detalhes do Evento -->
         <div class="mb-6">
             <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white drop-shadow-lg">Encontro 2025</h1>
-            <p class="text-2xl sm:text-2xl font-bold mt-6 text-purple-100">22 NOV - 16H</p>
+            <p class="text-2xl sm:text-3xl font-light text-purple-200 mt-2">da galera da PIVOT 08</p>
+            <p class="text-xl sm:text-2xl font-bold mt-6 text-white">22 NOV – 16H</p>
         </div>
 
         <!-- GIF do Countdown (Nítido) -->
         <div class="text-center rounded-xl overflow-hidden mb-6">
             <img src="https://i.countdownmail.com/4n5p31.gif"
-                    alt="Contagem Regressiva para a Festa PIVOT|08"
+                    alt="Contagem Regressiva para a Festa PIVOT 08"
                     class="w-full h-auto object-cover"
                 >
         </div>
 
-        <!-- BLOCO DE AÇÕES: MAPA EMBUTIDO E COPIAR -->
-        <div class="text-center mt-4">
-            <p class="text-xl font-semibold mb-4 text-white">Localização</p>
+        <!-- BLOCO 1: ENDEREÇO DO HOTEL (COM BORDA INFERIOR) -->
+        <div class="text-center mt-6 border-b border-white/10 pb-6 mb-6">
+            <!-- Ícone e Título da Hospedagem -->
+            <p class="text-xl font-semibold mb-4 text-white inline-flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
+                    <path fill-rule="evenodd" d="M11.5 7.9c.28-.11.5-.16.5-.16V6.75a.75.75 0 0 0-1.5 0v1.49l-.7-.7-.8-.8A5.996 5.996 0 0 0 10 3a6 6 0 0 0-5 9.77V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-5.23a6 6 0 0 0-1.28-4.87ZM10 18a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-4.5h6v4.5Z" clip-rule="evenodd" />
+                    <path d="M10 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                    <path d="M10 6.5a.5.5 0 0 1 .5.5v1.49l.7-.7.8-.8a6 6 0 0 0 1.28-4.87V2a.5.5 0 0 0-1 0v1.49l-.7-.7-.8-.8A5.996 5.996 0 0 0 10 3a6 6 0 0 0-5 9.77V18a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-5.23a6 6 0 0 0-1.28-4.87ZM10 18a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-4.5h6v4.5Z" />
+                </svg>
+
+                Hotel Ibis Tatuapé
+            </p>
 
             <!-- Endereço visível -->
-            <p id="fullAddress" class="text-lg sm:text-xl font-light text-purple-200 mt-2 mb-4 font-bold">Rua São Felipe 189 - Salão de Festas, Tatuapé</p>
-            
-            <!-- Mapa Incorporado (Responsivo) -->
-            <div class="map-container mb-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29262.364595329353!2d-46.58758557248078!3d-23.539853894105185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua%20S%C3%A3o%20Felipe%20189%20-%20Sal%C3%A3o%20de%20Festas%2C%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1763731917475!5m2!1spt-BR!2sbr" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Localização do Salão de Festas, Tatuapé"
-                ></iframe>
-            </div>
+            <p id="hotelAddress" class="text-lg sm:text-xl font-light text-purple-200 mt-2 mb-4">Rua Filipe Camarão n. 547, Tatuapé</p>
 
-            <!-- Botão: Copiar Endereço -->
-            <button id="copyButton"
-                    onclick="copyAddress()"
+            <!-- Botão: Copiar Endereço Hotel -->
+            <button id="copyButtonHotel"
+                    onclick="copyAddress('hotel')"
                     class="inline-flex items-center justify-center px-6 py-2 
                            bg-[--cor-escura-botao] text-white font-semibold rounded-full text-sm 
                            shadow-lg border border-white/50 
@@ -106,16 +107,61 @@
                     <path d="M7 6a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75V6Z" />
                     <path d="M11.75 4a.75.75 0 0 0-.75.75V11H4.75a.75.75 0 0 1 0-1.5h4.5a.75.75 0 0 0 .75-.75V4.75a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 1-.75.75H3.5a.75.75 0 0 1-.75-.75V4.75a.75.75 0 0 1 .75-.75h7.5Z" />
                 </svg>
-                Copiar Endereço
+                Copiar Endereço Hotel
             </button>
-            <p id="copyMessage" class="text-sm mt-2 text-green-300 opacity-0 transition-opacity duration-300">Endereço copiado!</p>
+            <p id="copyMessageHotel" class="text-sm mt-2 text-green-300 opacity-0 transition-opacity duration-300">Endereço copiado!</p>
+        </div>
+        
+        <!-- BLOCO 2: LOCALIZAÇÃO DA FESTA (BORDA SUPERIOR removida, agora o hotel a tem na inferior) -->
+        <div class="text-center mt-6">
+            <p class="text-xl font-semibold mb-4 text-white">Local da Festa</p>
+
+            <!-- Endereço visível -->
+            <p id="fullAddress" class="text-lg sm:text-xl font-light text-purple-200 mt-2 mb-4 font-bold">Rua São Felipe 189 - Salão de Festas, Tatuapé</p>
+            
+            <!-- Botão: Copiar Endereço Festa -->
+            <button id="copyButtonFesta"
+                    onclick="copyAddress('festa')"
+                    class="inline-flex items-center justify-center px-6 py-2 
+                           bg-[--cor-escura-botao] text-white font-semibold rounded-full text-sm 
+                           shadow-lg border border-white/50 
+                           hover:bg-[--cor-hover-botao] transition duration-300"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 mr-2">
+                    <path d="M7 6a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 .75.75v7.5a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75V6Z" />
+                    <path d="M11.75 4a.75.75 0 0 0-.75.75V11H4.75a.75.75 0 0 1 0-1.5h4.5a.75.75 0 0 0 .75-.75V4.75a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 1-.75.75H3.5a.75.75 0 0 1-.75-.75V4.75a.75.75 0 0 1 .75-.75h7.5Z" />
+                </svg>
+                Copiar Endereço Festa
+            </button>
+            <p id="copyMessageFesta" class="text-sm mt-2 text-green-300 opacity-0 transition-opacity duration-300">Endereço copiado!</p>
+
+            <!-- Mapa Incorporado (Responsivo) -->
+            <div class="map-container mb-4 mt-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29262.364595329353!2d-46.58758557248078!3d-23.539853894105185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRua%20S%C3%A3o%20Felipe%20189%20-%20Sal%C3%A3o%20de%20Festas%2C%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1763731917475!5m2!1spt-BR!2sbr" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização do Salão de Festas, Tatuapé"
+                ></iframe>
+            </div>
         </div>
     </div>
 
+    <!-- Script de cópia UNIFICADO -->
     <script>
-        function copyAddress() {
-            const addressText = "Rua São Felipe 189 - Salão de Festas, Tatuapé";
-            const copyMessage = document.getElementById('copyMessage');
+        function copyAddress(type) {
+            let addressText = '';
+            let copyMessageElement;
+            
+            if (type === 'festa') {
+                addressText = "Rua São Felipe 189 - Salão de Festas, Tatuapé";
+                copyMessageElement = document.getElementById('copyMessageFesta');
+            } else if (type === 'hotel') {
+                addressText = "Rua Filipe Camarão n. 547, bairro Tatuapé";
+                copyMessageElement = document.getElementById('copyMessageHotel');
+            } else {
+                return; 
+            }
             
             const tempInput = document.createElement('textarea');
             tempInput.value = addressText;
@@ -124,18 +170,20 @@
             
             try {
                 document.execCommand('copy');
-                copyMessage.textContent = "Endereço copiado com sucesso!";
+                copyMessageElement.textContent = "Endereço copiado com sucesso!";
             } catch (err) {
-                copyMessage.textContent = "Erro ao copiar. Tente novamente.";
+                copyMessageElement.textContent = "Erro ao copiar. Tente novamente.";
             } finally {
                 document.body.removeChild(tempInput);
                 
-                copyMessage.classList.remove('opacity-0');
-                copyMessage.classList.add('opacity-100');
+                // Mostrar a mensagem
+                copyMessageElement.classList.remove('opacity-0');
+                copyMessageElement.classList.add('opacity-100');
                 
+                // Esconder a mensagem depois de 2 segundos
                 setTimeout(() => {
-                    copyMessage.classList.remove('opacity-100');
-                    copyMessage.classList.add('opacity-0');
+                    copyMessageElement.classList.remove('opacity-100');
+                    copyMessageElement.classList.add('opacity-0');
                 }, 2000);
             }
         }
